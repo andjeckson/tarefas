@@ -415,7 +415,7 @@ function salvarTarefa(){
    salvarDados('dados-do-app-tarefas', tarefas)
 }
 
-window.addEventListener('load',()=>{
+window.addEventListener('DOMContentLoaded',()=>{
     carregarModo()
     criarLista()
     setTimeout(()=>{
