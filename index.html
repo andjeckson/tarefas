@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="modo-escur">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#341DCB">
+  <meta name="msapplication-navbutton-color" content="#341DCB">
+  <meta name="theme-color" content="#341DCB">
+  <meta name="color-scheme" content="dark">
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+ 
+  <section class="abertura">
+     <img src="assets/img/Logo.png" alt="" class="logo">
+    <h1 class="titulo">Tarefas</h1>
+    <p class="desenvolvedor">Projetado por Andjeckson</p>
+ </section>
+  
+ <div class="app">
+     <nav>
+        <div class="ferramentas">
+           <p class="nome">
+               <i class="bx bx-task"></i>
+               <span>Tarefas</span>
+           </p>
+           <i class="bx bx-moon" id="btn-darkmode"></i>
+           
+        </div>
+        <label class="barra-de-pesquisa">
+            <i class="bx bx-search"></i>
+            <input type="search" placeholder="Pesquisar tarefa…">
+            <i class="bx"></i>
+        </label>
+     </nav>
+     <!--====== TODAS AS TAREFAS ======-->
+     <section class="tarefas" id="todas">
+       <h1>Suas <mark>tarefas:</mark></h1>
+        <ul class="lista">
+           <!-- As terefas ficarão aqui -->
+        </ul>
+     </section>
+     <!--===== TAREFAS PENDENTES =====-->
+     <section class="tarefas" id="pendente">
+        <h1><mark>Pendentes:</mark></h1>
+        <ul class="lista">
+           <!-- As terefas ficarão aqui -->
+        </ul>
+     </section>
+     <!---===== TAREFAS CONCLUÍDAS =====-->
+     <section class="tarefas" id="concluida">
+        <h1><mark>Concluídas:</mark></h1>
+        <ul class="lista">
+           <!-- As terefas ficarão aqui -->
+        </ul>
+     </section>
+     <!--===== SOBRE =====-->
+     <section class="sobre" id="sobre">
+       <h1>Sobre o app</h1>
+       <div class="card-perfil">
+           <img src="assets/img/Andjeckson.png" alt="">
+             <header>
+                <p>Desenvolvido por:</p>
+                <span>Andjeckson Tavares Guimarães</span>
+            </header>
+       </div>
+       <div class="card-versao">
+          <i class="bx bx-bug"></i>
+          <p>Versão: 0.03</p>
+       </div>
+     </section>
+     
+        
+     <button class="adicionar">
+        <i class="bx bx-plus"></i>
+     </button>
+     
+     <section class="barra-de-navegacao">
+        <ul class="lista">
+           <li data-ative="#todas" class="ativo">
+               <i class="icone bx bx-collection"></i>
+               <span>Todas</span>
+           </li>
+           <li data-ative="#pendente">
+               <i class="icone bx bx-hourglass"></i>
+               <span>Pendentes</span>
+           </li>
+           <li data-ative="#concluida">
+               <i class="icone bx bx-check-circle"></i>
+               <span>Concluídas</span>
+           </li>
+           <li data-ative="#sobre">
+               <i class="icone bx bx-info-circle"></i>
+               <span>Sobre</span>
+           </li>
+        </ul>
+     </section>
+     
+ </div>
+ 
+  <script src="assets/js/Deslize.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
