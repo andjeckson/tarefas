@@ -418,9 +418,12 @@ function salvarTarefa(){
 window.addEventListener('DOMContentLoaded',()=>{
     carregarModo()
     criarLista()
-    setTimeout(()=>{
-       let telaDeAbertura = document.querySelector('.abertura')
-           telaDeAbertura.remove()
-    }, 1950)
 })
+
+
+let telaDeAbertura = document.querySelector('.abertura')
+    telaDeAbertura.on('animationend', ()=>{
+           telaDeAbertura.remove()
+    })
+
 
